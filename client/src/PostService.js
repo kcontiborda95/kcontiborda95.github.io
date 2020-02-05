@@ -3,7 +3,7 @@ import axios from 'axios';
 const  url = 'http://localhost:5000/api/posts/';
 
 class PostService {
-    //get posts
+    //Get posts
     static getPosts(){
         return new Promise(async (resolve,reject) => {
             try {
@@ -22,14 +22,14 @@ class PostService {
         })
     }
 
-    //create posts
+    //Create posts
     static insertPost(course,location,price,provider,author) {
         return axios.post(url, {
             course,location,price,provider,author
         });
     }
 
-    //delete posts
+    //Delete posts
     static deletePost(id)
     {
         return axios.delete(`${url}${id}`);
