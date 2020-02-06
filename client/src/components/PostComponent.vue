@@ -14,7 +14,7 @@
       <label for="create-post">Provider: </label>
       <input type="text" id="enter-provider" v-model="provider" placeholder="Enter the provider">
       <br>
-      <label for="create-post">author: </label>
+      <label for="create-post">Author: </label>
       <input type="text" id="enter-provider" v-model="author" placeholder="Enter the author">
       
       <button v-on:click="createPost">Post</button>
