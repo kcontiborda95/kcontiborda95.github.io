@@ -3,7 +3,7 @@ import axios from 'axios';
 const  url = 'http://localhost:5000/api/posts/';
 
 class PostService {
-    //Get posts
+    //Get posts from database
     static getPosts(){
         return new Promise(async (resolve,reject) => {
             try {
